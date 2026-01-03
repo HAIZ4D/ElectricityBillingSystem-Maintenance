@@ -55,7 +55,7 @@ public class SignUp extends JFrame implements ActionListener {
         panel.add(uname);
 
         JLabel name = new JLabel("Name");
-        name.setBounds(40, 160, 140, 20);
+        name.setBounds(40, 160, 140, 20); //comment by Hafiy -testing
         panel.add(name);
 
         namee = new JTextField();
