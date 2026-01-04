@@ -16,7 +16,7 @@ public class DepositDetails extends JFrame implements ActionListener{
         
         super("Deposit Details");
         
-        setSize(700,700); // changed by yasmin
+        setSize(500,700); // change value by yasmin
         setLocation(400,100);
         
         getContentPane().setBackground(Color.white);
