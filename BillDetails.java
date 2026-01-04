@@ -9,7 +9,7 @@ public class BillDetails extends JFrame{
     
     BillDetails(String meter){
         
-        setSize(700, 650); // Updated by Haizad
+        setSize(700, 660); // Updated by Haizad
         setLocation(500, 200);
         getContentPane().setBackground(Color.white);
         
