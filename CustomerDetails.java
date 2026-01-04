@@ -16,7 +16,7 @@ public class CustomerDetails extends JFrame implements ActionListener{
         super("Customer Details");
         
         setSize(1200,650); // Comment by Yasmin - testing Git collaboration
-        setLocation(200,150);
+        setLocation(300,150); // Testing conflicts - Updated setLocation
         
         table = new JTable();
         
