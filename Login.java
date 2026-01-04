@@ -15,7 +15,7 @@ public class Login extends JFrame implements ActionListener{
     Login(){
         super("Login Page");
         getContentPane().setBackground(Color.white);
-        System.out.print("Testing conflicts");
+        System.out.print("Hellow World login Page");
         setLayout(null);
         
         JLabel lblusername = new JLabel("Username");
