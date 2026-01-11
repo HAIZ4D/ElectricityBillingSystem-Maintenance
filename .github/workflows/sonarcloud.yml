@@ -34,4 +34,4 @@ jobs:
           projectKey: auratech_electricity
           projectName: Electricity Billing System
           organization: haiz4d
-          token: ${{ 0d861c2a1350862847186f7ee3d670d0cac8b944 }}
+          token: ${{ secrets.SONAR_TOKEN }}
