@@ -17,4 +17,12 @@
     <build>
         <sourceDirectory>src</sourceDirectory>
     </build>
+    <!-- If rs2xml is available in Maven Central -->
+    <dependencies>
+        <dependency>
+            <groupId>net.proteanit</groupId>
+            <artifactId>rs2xml</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+    </dependencies>
 </project>
