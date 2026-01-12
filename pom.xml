@@ -22,7 +22,7 @@
         <dependency>
             <groupId>net.proteanit</groupId>
             <artifactId>rs2xml</artifactId>
-            <version>1.0.1</version>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 </project>
