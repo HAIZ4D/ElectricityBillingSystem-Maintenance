@@ -191,7 +191,71 @@ public class Project extends JFrame implements ActionListener{
         setVisible(true);
     }
     
-CR-02: Reduce cognitive complexity in menu handling logic
+public void actionPerformed(ActionEvent ae) {
+    String msg = ae.getActionCommand();
+
+    switch (msg) {
+        case "Add New Customer":
+            new NewCustomer();
+            break;
+
+        case "Customer Details":
+            new CustomerDetails();
+            break;
+
+        case "Deposit Details":
+            new DepositDetails();
+            break;
+
+        case "Calculate Bill":
+            new CalculateBill();
+            break;
+
+        case "View Info":
+            new ViewInformation(meter);
+            break;
+
+        case "Update Info":
+            new UpdateInformation(meter);
+            break;
+
+        case "Bill Details":
+            new BillDetails(meter);
+            break;
+
+        case "Notepad":
+            try {
+                Runtime.getRuntime().exec("notepad.exe");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            break;
+
+        case "Calculator":
+            try {
+                Runtime.getRuntime().exec("calc.exe");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            break;
+
+        case "Logout":
+            setVisible(false);
+            new Login();
+            break;
+
+        case "Pay Bill":
+            new PayBill(meter);
+            break;
+
+        case "Generate Bill":
+            new GenerateBill(meter);
+            break;
+
+        default:
+            break;
+    }
+}
     
     public static void main (String[] args){
         new Project("", "");
