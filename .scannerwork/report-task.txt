@@ -1,6 +1,6 @@
-projectKey=ElectricityBillingSystem
+projectKey=auratech_electricity
 serverUrl=http://localhost:9000
 serverVersion=26.1.0.118079
-dashboardUrl=http://localhost:9000/dashboard?id=ElectricityBillingSystem
-ceTaskId=6d52072c-4448-464a-97cd-c4b8fdb4aa7b
-ceTaskUrl=http://localhost:9000/api/ce/task?id=6d52072c-4448-464a-97cd-c4b8fdb4aa7b
+dashboardUrl=http://localhost:9000/dashboard?id=auratech_electricity
+ceTaskId=334ec3fa-dd5b-443a-98d1-0dc9f1bf8cae
+ceTaskUrl=http://localhost:9000/api/ce/task?id=334ec3fa-dd5b-443a-98d1-0dc9f1bf8cae

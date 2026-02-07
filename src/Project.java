@@ -1,8 +1,19 @@
  package electricity.billing.system;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.Frame;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class Project extends JFrame implements ActionListener{
     
@@ -15,7 +26,8 @@ public class Project extends JFrame implements ActionListener{
         this.atype = atype;
         this.meter = meter;
         
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        //CR-003: Refactor static access frame constants
+        setExtendedState(Frame.MAXIMIZED_BOTH);
         
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/elect1.jpg"));
         Image i2 = i1.getImage().getScaledInstance(1550, 850, Image.SCALE_DEFAULT);
