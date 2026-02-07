@@ -203,43 +203,71 @@ public class Project extends JFrame implements ActionListener{
         setVisible(true);
     }
     
-    public void actionPerformed(ActionEvent ae){
-        String msg = ae.getActionCommand();
-        if(msg.equals("Add New Customer")){
+public void actionPerformed(ActionEvent ae) {
+    String msg = ae.getActionCommand();
+
+    switch (msg) {
+        case "Add New Customer":
             new NewCustomer();
-        }else if(msg.equals("Customer Details")){
+            break;
+
+        case "Customer Details":
             new CustomerDetails();
-        }else if(msg.equals("Deposit Details")){
+            break;
+
+        case "Deposit Details":
             new DepositDetails();
-        }else if(msg.equals("Calculate Bill")){
+            break;
+
+        case "Calculate Bill":
             new CalculateBill();
-        }else if(msg.equals("View Info")){
+            break;
+
+        case "View Info":
             new ViewInformation(meter);
-        }else if(msg.equals("Update Info")){
+            break;
+
+        case "Update Info":
             new UpdateInformation(meter);
-        }else if(msg.equals("Bill Details")){
+            break;
+
+        case "Bill Details":
             new BillDetails(meter);
-        }else if(msg.equals("Notepad")){
-            try{
+            break;
+
+        case "Notepad":
+            try {
                 Runtime.getRuntime().exec("notepad.exe");
-            }catch(Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-        }else if(msg.equals("Calculator")){
-            try{
+            break;
+
+        case "Calculator":
+            try {
                 Runtime.getRuntime().exec("calc.exe");
-            }catch(Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-        }else if(msg.equals("LogOut")){
+            break;
+
+        case "Logout":
             setVisible(false);
             new Login();
-        }else if(msg.equals("Pay Bill")){
+            break;
+
+        case "Pay Bill":
             new PayBill(meter);
-        }else if(msg.equals("Generate Bill")){
+            break;
+
+        case "Generate Bill":
             new GenerateBill(meter);
-        }
+            break;
+
+        default:
+            break;
     }
+}
     
     public static void main (String[] args){
         new Project("", "");
